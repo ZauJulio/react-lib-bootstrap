@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primary-violet);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  :hover {
+    filter: brightness(1.15);
+    transition: all 0.3s ease-in-out;
+  }
+
+  :disabled {
+    filter: brightness(0.5);
+    cursor: not-allowed;
+  }
+
+  :focus {
+    outline: none;
+  }
+}

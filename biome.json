@@ -1,0 +1,82 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "json": {
+    "parser": {
+      "allowComments": true
+    }
+  },
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": ["**/dist", "**/.github/", "**/node_modules", "**/storybook-static/**"]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 120,
+    "attributePosition": "auto",
+    "ignore": []
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "noLabelWithoutControl": "off",
+        "noSvgWithoutTitle": "off",
+        "useIframeTitle": "off",
+        "useValidAnchor": "off",
+        "useButtonType": "warn",
+        "useGenericFontNames": "warn",
+        "noNoninteractiveTabindex": "off",
+        "useAltText": "warn",
+        "useKeyWithClickEvents": "off"
+      },
+      "style": {
+        "useExportType": "warn",
+        "useSelfClosingElements": "warn",
+        "useImportType": "warn",
+        "noNonNullAssertion": "warn",
+        "noUselessElse": "warn"
+      },
+      "complexity": {
+        "useOptionalChain": "warn",
+        "noBannedTypes": "warn",
+        "noUselessFragments": "warn"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off"
+      },
+      "suspicious": {
+        "useIsArray": "warn",
+        "noEmptyBlock": "warn",
+        "noConfusingVoidType": "warn",
+        "noArrayIndexKey": "warn",
+        "noExplicitAny": "warn"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "single",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto"
+    }
+  }
+}

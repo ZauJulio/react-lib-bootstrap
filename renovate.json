@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    },
+    {
+      "groupName": "Mend: high confidence minor and patch dependency updates",
+      "matchUpdateTypes": ["minor"],
+      "matchConfidence": ["very high", "high"],
+      "automerge": true
+    }
+  ]
+}

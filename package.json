@@ -1,0 +1,112 @@
+{
+  "name": "@zaujulio/components",
+  "description": "Shared components library",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --p tsconfig.build.json && vite build",
+    "serve": "NODE_ENV=production serve -s storybook-static -p 7000",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "typecheck": "tsc --p tsconfig.build.json --pretty --noEmit",
+    "storybook": "BROWSER=brave storybook dev -p 7000",
+    "build-storybook": "storybook build",
+    "lint": "biome lint --fix",
+    "format": "biome format --fix",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@chromatic-com/storybook": "^3.2.2",
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/manager-api": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
+    "@storybook/theming": "^8.4.7",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.1",
+    "@types/webpack-env": "^1.18.5",
+    "@vitejs/plugin-react-swc": "^3.7.2",
+    "env-cmd": "^10.1.0",
+    "globals": "^15.12.0",
+    "husky": "^9.1.7",
+    "jsdom": "^25.0.1",
+    "lint-staged": "^15.2.11",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "storybook": "^8.4.7",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vite-plugin-biome": "^1.0.12",
+    "vite-plugin-dts": "^4.3.0",
+    "vite-plugin-lib-inject-css": "^2.1.1",
+    "vite-plugin-svgr": "^4.3.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^2.1.8"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["./dist/*"],
+  "typesVersions": {
+    "*": {
+      "*": ["./dist/*"]
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index/index.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "default": "./dist/components/index.js"
+    },
+    "./styles": {
+      "types": "./dist/styles/index.d.ts",
+      "default": "./dist/styles/index.js"
+    },
+    "./services": {
+      "types": "./dist/services/index.d.ts",
+      "default": "./dist/services/index.js"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "default": "./dist/utils/index.js"
+    },
+    "./contexts": {
+      "types": "./dist/contexts/index.d.ts",
+      "default": "./dist/contexts/index.js"
+    },
+    "./repos": {
+      "types": "./dist/repos/index.d.ts",
+      "default": "./dist/repos/index.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/types/index.js"
+    },
+    "./fonts/*": "./dist/fonts/*.otf",
+    "./icons/*": "./dist/icons/*.svg"
+  },
+  "sideEffects": ["**/*.css"]
+}

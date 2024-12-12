@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "types": ["node", "jest", "@testing-library/jest-dom", "webpack-env"],
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    // Path Aliases
+    "baseUrl": "lib",
+    "paths": {
+      "@components": ["./components/index.tsx"],
+      "@styles": ["./styles/index.tsx"],
+      "@services": ["./services/index.ts"],
+      "@utils": ["./utils/index.ts"],
+      "@types": ["./types/index.tsx"],
+      "@contexts": ["./contexts/index.tsx"],
+      "@hooks": ["./hooks/index.tsx"],
+      "@repos": ["./repos/index.ts"],
+      "@assets/*": ["./assets/*"]
+    }
+  },
+  "include": ["lib"]
+}

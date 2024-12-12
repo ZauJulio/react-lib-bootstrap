@@ -1,0 +1,108 @@
+* {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+select:focus {
+  border: none;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+:root {
+  /* White */
+  --primary-white: #ffffff;
+  /* Violet */
+  --primary-violet: #5f4b8b;
+  /* Base */
+  font-size: 16px;
+}
+
+@media (min-width: 1336px) and (max-width: 1920px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1335px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    font-size: 11px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@font-face {
+  font-family: "";
+  src: url("");
+  font-weight: extra-bold;
+  font-style: normal;
+}
+
+select {
+  appearance: none !important;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAdVBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhMdQaAAAAJ3RSTlMAAAECAwQGBwsOFBwkJTg5RUZ4eYCHkJefpaytrsXGy8zW3+Do8vNn0bsyAAAAYElEQVR42tXROwJDQAAA0Ymw1p9kiT+L5P5HVEi3qJn2lcPjtIuzUIJ/rhIGy762N3XaThqMN1ZPALsZPEzG1x8LrFL77DHBnEMxBewz0fJ6LyFHTPL7xhwzWYrJ9z22AqmQBV757MHfAAAAAElFTkSuQmCC) !important;
+  background-position: 100% !important;
+  background-repeat: no-repeat !important;
+  padding: 0.5rem !important;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: 1px solid var(--secondary-blue);
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(1.15);
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+input[type="tel"],
+input[type="url"] {
+  padding-left: 0.5vw;
+}

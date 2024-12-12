@@ -1,0 +1,26 @@
+{
+  "include": ["lib"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    /* Bundler mode */
+    "types": ["jest", "@testing-library/jest-dom"],
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+
+    // Path Aliases
+    "baseUrl": "lib",
+    "paths": {
+      "@components": ["./components/index.tsx"],
+      "@styles": ["./styles/index.tsx"],
+      "@services": ["./services/index.ts"],
+      "@utils": ["./utils/index.ts"],
+      "@types": ["./types/index.tsx"],
+      "@contexts": ["./contexts/index.tsx"],
+      "@hooks": ["./hooks/index.tsx"],
+      "@repos": ["./repos/index.ts"],
+      "@assets/*": ["./assets/*"]
+    }
+  }
+}
